@@ -6,7 +6,7 @@ use Gamespecu\LaravelNav\View\Components\Bootstrap\Menu;
 use Illuminate\Routing\Route;
 use Illuminate\Support\ServiceProvider;
 
-class NavServiceProviders extends ServiceProvider
+class NavServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
