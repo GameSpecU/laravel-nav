@@ -17,7 +17,7 @@ class Link implements Node
      */
     protected $icon;
 
-    public function __construct(string $title, string $route, string $icon)
+    public function __construct(string $title, string $route, string $icon = '')
     {
 
         $this->title = $title;

@@ -22,7 +22,7 @@ class NavServiceProvider extends ServiceProvider
     protected function registerRouteMacro(): void
     {
         if (!Route::hasMacro('nav')) {
-            Route::macro('nav', function (string $title, string $icon = null) {
+            Route::macro('nav', function (string $title, string $icon = '') {
                 \Gamespecu\LaravelNav\Facades\Nav::add($title, $this->action['as'], $icon);
             });
         }

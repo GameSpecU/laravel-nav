@@ -23,7 +23,7 @@
                 "Gamespecu\\LaravelNav\\NavServiceProvider"
             ],
             "aliases": {
-                "Nav": "Gamespecu\\LaravelNav\\Nav"
+                "Nav": "Gamespecu\\LaravelNav\\Facades\\Nav"
             }
         }
     }

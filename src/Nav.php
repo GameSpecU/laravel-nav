@@ -12,7 +12,7 @@ class Nav
     protected $items;
 
 
-    public function add(string $title, string $route, string $icon = null): void
+    public function add(string $title, string $route, string $icon = ''): void
     {
         $link = new Link($title, $route, $icon);
         if ($section = $this->findSection($route)) {
@@ -23,7 +23,7 @@ class Nav
     }
 
 
-    public function registerSection(string $title, string $as, string $icon = null): void
+    public function registerSection(string $title, string $as, string $icon = ''): void
     {
         $this->items[$as] = new Section($title, $icon);
     }

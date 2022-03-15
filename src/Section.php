@@ -18,7 +18,7 @@ class Section implements Node
      */
     protected $children;
 
-    public function __construct(string $title, string $icon = null)
+    public function __construct(string $title, string $icon = '')
     {
         $this->title = $title;
         $this->icon = $icon;
