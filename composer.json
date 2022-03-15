@@ -1,0 +1,30 @@
+{
+    "name": "gamespecu/laravel-nav",
+    "description": "Simple Navigation Managing for Laravel",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Dawid Focht",
+            "email": "dawopi2@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": ">=5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gamespecu\\LaravelNav\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gamespecu\\LaravelNav\\NavServiceProvider"
+            ],
+            "aliases": {
+                "Nav": "Gamespecu\\LaravelNav\\Nav"
+            }
+        }
+    }
+}
