@@ -7,15 +7,15 @@ class Link implements Node
     /**
      * @var string
      */
-    protected $route;
+    public $route;
     /**
      * @var string
      */
-    protected $title;
+    public $title;
     /**
      * @var string
      */
-    protected $icon;
+    public $icon;
 
     public function __construct(string $title, string $route, string $icon = '')
     {
@@ -25,21 +25,5 @@ class Link implements Node
         $this->icon = $icon;
     }
 
-    public function getTitle(): string
-    {
-        return $this->title;
-    }
 
-    /**
-     * @return string
-     */
-    public function getRoute(): string
-    {
-        return $this->route;
-    }
-
-    public function getIcon(): string
-    {
-        return $this->icon;
-    }
 }

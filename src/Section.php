@@ -7,16 +7,16 @@ class Section implements Node
     /**
      * @var string
      */
-    protected $title;
+    public $title;
     /**
      * @var string
      */
-    protected $icon;
+    public $icon;
 
     /**
-     * @var Node[]
+     * @var Link[]
      */
-    protected $children;
+    public $children;
 
     public function __construct(string $title, string $icon = '')
     {
@@ -24,19 +24,11 @@ class Section implements Node
         $this->icon = $icon;
     }
 
-    public function getTitle(): string
-    {
-        return $this->title;
-    }
 
-    public function getIcon(): ?string
-    {
-        return $this->icon;
-    }
-
-    public function addChild(Node $node)
+    public function addChild(Link $node): void
     {
         $this->children[] = $node;
     }
+
 
 }
